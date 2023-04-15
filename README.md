@@ -1,6 +1,6 @@
 # SET-MRTS
 ***
-**我是搬运工**
+**我是搬运代码的，代码都是学长学姐写的，我只写了安装和配置**
 ***
 SET-MRTS: **S**chedulability **E**xperimental **T**ools for **M**ultiprocessors **R**eal **T**ime **S**ystems
 ## Environment Building
