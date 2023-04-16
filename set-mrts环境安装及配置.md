@@ -153,6 +153,7 @@ g++ test.cpp -o test -lmgl -lmgl-wnd
 
 + 第一步
 ```
+sudo apt-get install libgmp-dev
 sudo apt-get install m4
 ```
 + 第二步
@@ -161,7 +162,7 @@ wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz
 ```
 + 第三步
 ```
-xz -d gmp-6.2.1.tar.xz && tar xvf gmp-6.2.1.tar
+tar xvf gmp-6.2.1.tar
 ```
 + 第四步
 ```
