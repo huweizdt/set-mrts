@@ -129,62 +129,13 @@ g++ test.cpp -o test -lmgl -lmgl-wnd
 
 ## 安装GMP
 
-+ 第一步
++ 
 ```
 sudo apt-get install libgmp-dev
 sudo apt-get install m4
 ```
-+ 第二步
-```
-wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.xz
-```
-+ 第三步
-```
-tar xvf gmp-6.2.1.tar
-```
-+ 第四步
-```
-# 进入gmp目录
-cd gmp-6.2.1
-# 设置安装路径前缀，建议设置为/usr
-./configure --prefix=/usr  --enable-cxx
-# 开始编译安装
-make
-make check
-sudo make install
-```
-### 测试是否安装成功
-```cpp
-#include <gmpxx.h>
-#include <iostream>
-#include <stdio.h>
-using namespace std;
-int main()
-{
-        mpz_t a, b, c;
-        mpz_init(a);
-        mpz_init(b);
-        mpz_init(c);
-        printf("========= Input a and b => Output a + b =========\n");
-        printf("[-] a = ");
-        gmp_scanf("%Zd", a);
-        printf("[-] b = ");
-        gmp_scanf("%Zd", b);
-        mpz_add(c, a, b);
-        gmp_printf("[+] c = %Zd\n",c);
-        return 0;
-}
 
-```
-***
-```
-# 编译testGMP.cpp
-g++ testGMP.cpp -o testGMP -lgmp -lm
-# 没有报错的话就说明安装成功～运行即可
-./testGMP
 
-```
-![image.png](https://gitee.com/huweizdt/pic-go/raw/master/image/202304151307378.png)
 
 ## 安装GLPK
 
@@ -192,32 +143,6 @@ g++ testGMP.cpp -o testGMP -lgmp -lm
 ```
 sudo apt install libglpk-dev
 ```
-## 下载TinyXML-2
-
-### 先下载git
-
-```
-sudo apt install git
-
-//配置git
-
-git config --global user.name "huwei"   //用自己的名字或者随便你想用什么
-git config --global user.email "huweizdt@163.com" //用自己的email或者你自己确定
-```
-
-### 下载TinyXML-2 
-
-```
-git clone https://github.com/leethomason/tinyxml2.git
-解压出来
-cd tinyxml2
-make
-./xmltest
-```
-
-全都通过
-
-![](https://gitee.com/huweizdt/pic-go/raw/master/image/202304151939060.png)
 
 ## 安装mysql
 
