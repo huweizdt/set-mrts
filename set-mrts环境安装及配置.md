@@ -83,9 +83,8 @@ deb-src http://mirrors.aliyun.com/ubuntu/ bionic-backports main restricted unive
 ```
 + 更新源
 ```
-apt-get update
-apt-get -f install //可省略
-apt-get upgrade //可省略
+sudo apt update
+
 ```
 
 ## 更换语言
@@ -101,7 +100,7 @@ apt-get upgrade //可省略
 ## GCC G++
 
 ```
-apt-get install gcc g++
+sudo apt install gcc g++
 ```
 ### 测试是否安装成功
 ```cpp
